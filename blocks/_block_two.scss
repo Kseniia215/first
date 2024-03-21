@@ -1,0 +1,94 @@
+.block_two{
+    max-width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .block_two_h1{
+        @include text(36px, bolder);
+        margin: 112px 0 0 0;
+    }
+    .block_two_rectangle{
+        margin: 3px 0 0 0;
+    }
+    .block_two_card{
+        margin-top: 85px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        .block_two_row_one{
+            .block_two_image{
+            margin-right: 25px;
+            }
+        }
+        .block_two_row_two{
+            .block_two_image{
+            margin-right: 17px;
+            margin-top: 25px;
+            }
+        }
+    }
+    .block_two_h3{
+        @include text(24px, 500);
+        color: #544837;
+        margin: 15px 0 0 0;
+    }
+    .block_two_yellow{
+        width: 1480px;
+        height: 742px;
+        background-color: #FFC43B;
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .block_two_logo{
+            margin-top: 250px;
+        }
+        .block_two_label{
+            position: relative;
+            .block_two_arrow{
+                position: absolute;
+                left: 300px;
+                top: 65px;
+            }
+        }
+        .block_two_label input[type="text"]{
+            padding-left: 300px;
+            width: 372px;
+            padding: 23px;
+            display: block;
+            margin-top: 55px;
+            border: none;
+            box-sizing: border-box;
+            border-radius: 35px;
+            background-color: #fff;
+        }
+        input::-webkit-input-placeholder { 
+            font-size: 24px;
+            font-weight: bold;
+            color: #979797;
+          }
+    }
+    .block_two_h1{
+        .block_two_link{
+            color: #3A5AFF;
+        }
+        .block_two_link:hover{
+            color: #FFC43B;
+        }
+    }
+    .block_two_container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .block_two_imgtext{
+            display: flex;
+            .block_two_text{
+                width: 445px;
+                margin-right: 75px;
+                margin-left: 75px;
+            }
+        }
+    }
+}

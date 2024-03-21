@@ -1,0 +1,106 @@
+header{
+    max-width: 1480px;
+    height: 740px;
+    margin: 0 auto;
+    .header_nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 100px;
+        margin-left: 100px;
+        .header_reg{
+            select{
+                border: none;
+                font-size: 25px;
+            }
+            .header_button{
+                @extend %button;
+            }
+            .header_button:hover {
+                background-color: #FFC43B;
+              }
+        }
+    }
+    .header_body{
+        display: flex;
+        .header_slogan{
+            width: 522px;
+            margin-top: 68px;
+            margin-left: 104px;
+            .header_h1{
+                font-family: "Montserrat";
+                color: #2F281E;
+                font-size: 74px;
+                font-weight: 800;
+                margin: 0 auto;
+            }
+            .header_h3{
+                @include text(24px, normal);
+                // font-size: 24px;
+                // font-family: "Montserrat";
+                color: #544837;
+                // font-weight: normal;
+                margin: 35px 0 0 0;
+            }
+            .header_button{
+                @extend %button;
+            }
+            .header_button:hover {
+                background-color: #FFC43B;
+              }
+        }
+        .header_image{
+            margin-top: 144px;
+            display: flex;
+            max-width: 495px;
+            max-height: 437px;
+        }
+    }
+    @media (max-width:1024px){
+        .header_nav{
+            margin-right: 50px;
+            margin-left: 50px;
+            .header_logo{
+                width: 310px;
+                height: 34px;
+            }
+            .header_reg{
+                select{
+                    font-size: 15px;
+                }
+                .header_button{
+                    padding: 8px 16px;
+                    font-size: 16px;
+              }
+            }
+        }
+        .header_body{
+            justify-content: space-between;
+            margin-right: 50px;
+            margin-left: 50px;
+            .header_slogan{
+                width: 300px;
+                .header_h1{
+                    font-size: 60px;
+                }
+                .header_h3{
+                    font-size: 18px;
+                }
+            }
+            .header_image{
+                width: 330px;
+                height: 291px;
+            }
+        }  
+    }
+    @media (max-width:660px){
+        .header_nav{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        .header_body{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+}
